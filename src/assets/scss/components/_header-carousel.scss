@@ -1,0 +1,62 @@
+@import '../base/typography';
+
+//header carousel
+ header .carousel{
+     .carousel-item{
+         & img{
+             @include transparent-mask;
+             width: 100%;
+             height: auto;
+            }
+            & .carousel-caption{
+                margin: 0 0 0 1rem;
+                padding: 0 0 0.5rem 0;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                text-align: left;
+                width: 70%;
+                height: 100%;
+                
+                
+            }
+            & h3{
+                font-size: 1.5em;
+                
+            }
+        }
+
+        @media screen and (min-width:992px){
+            .carousel-item{
+                
+                   & .carousel-caption{
+                       margin: 0;
+                       padding: 0 0 1rem 0;
+                       align-items: center;
+                       text-align: center;
+                       width: 100%;
+                       height: 100%;
+                       
+                       
+                   }
+                   & h3{
+                       font-size: $x-large;
+                       width: 50%;
+                   }
+               }
+        }
+    }
+    
+    // header .carousel-item img{
+    //     width: 100%;
+    //     height: 100%;
+    //     -webkit-mask-image: linear-gradient(#000 50%, transparent);
+    //      mask-image: linear-gradient(#000 50%, transparent);
+         
+    //  }
+     
+    //  .carousel-caption{
+    //      position: relative;
+    //  }

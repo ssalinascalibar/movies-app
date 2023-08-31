@@ -1,0 +1,30 @@
+section{
+    // margin: 2rem 0;
+    @media screen and (min-width: 992px){
+        .scroll-gallery{
+            .wrap-gallery{
+                width: 15vw;
+            }
+        }
+    }
+
+}
+
+#popular, #trendingMovies, #upcoming{
+    margin: 2rem 0 2rem 1rem;
+}
+
+// upcoming section
+#upcoming{
+    .wrap-gallery{
+        width: 60vw;
+    }
+    @media screen and (min-width: 992px){
+        .scroll-gallery{
+            .wrap-gallery{
+                width: 20vw;
+            }
+        }
+    }  
+}
+

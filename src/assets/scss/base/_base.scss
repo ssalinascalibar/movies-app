@@ -1,0 +1,27 @@
+@import '../base/typography.scss';
+
+body{
+    font-family: $manrope;
+    color: $font-color;
+    background-color: $black;
+    // background-attachment: fixed;
+}
+
+p{
+    font-weight: $regular;
+    font-size: $medium;
+}
+
+h2{
+    font-weight: $bold;
+    font-size: $large;
+}
+
+.container{
+    margin: 0 2rem;
+}
+
+
+
+
+

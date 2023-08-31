@@ -1,0 +1,16 @@
+@mixin horizontal-slider{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+//máscara para imagen
+@mixin transparent-mask {
+    -webkit-mask-image: linear-gradient(#0c0a0f 40%, transparent 90%);
+    mask-image: linear-gradient(#0c0a0f 40%, transparent 90%);
+}

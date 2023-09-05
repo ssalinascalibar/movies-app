@@ -4,28 +4,28 @@ import React from "react";
 import Context from '../Context'
 import { useContext } from 'react'
 
-export default function ScrollGallery({props, id}) {
+export default function ScrollGallery({props, sectionId}) {
 
     const { IMAGE_PATH } = useContext(Context);
 
-    function leftScroll(id) {
-        const left = document.querySelector(`#${id} .scroll-gallery`);
+    function leftScroll(sectionId) {
+        const left = document.querySelector(`#${sectionId} .scroll-gallery`);
         console.log(left)
         left.scrollBy(-200, 0);
     }
 
     function rightScroll() {
-        const right = document.querySelector(`#${id} .scroll-gallery`);
+        const right = document.querySelector(`#${sectionId} .scroll-gallery`);
         console.log(right)
         right.scrollBy(200, 0);
     }
 
   return (
     <div className="cover">
-      <div className="scroll-gallery" id={id}>
+      <div className="scroll-gallery" id={sectionId}>
         <div
           className="left carousel-control-prev-icon wrap-arrow-gallery"
-          onClick={() => leftScroll(id)}
+          onClick={() => leftScroll(sectionId)}
         ></div>
         {props.map((prop) => (
           <div key={prop.id} className="wrap-gallery">
@@ -37,7 +37,7 @@ export default function ScrollGallery({props, id}) {
         ))}
         <div
           className="right carousel-control-next-icon wrap-arrow-gallery"
-          onClick={() => rightScroll(id)}
+          onClick={() => rightScroll(sectionId)}
         ></div>
       </div>
     </div>

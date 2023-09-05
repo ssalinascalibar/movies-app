@@ -14,7 +14,7 @@ export default function Popular() {
   return (
     <section id="popular">
         <h2>Populares</h2>
-        <ScrollGallery props={popular} id="popular" />
+        <ScrollGallery props={popular} sectionId="popular" />
     </section>
   )
 }

@@ -14,7 +14,7 @@ export default function TrendingMovies() {
   return (
     <section id="trendingMovies">
         <h2>Tendencias</h2>
-        <ScrollGallery props={movies} id="trendingMovies" />
+        <ScrollGallery props={movies} sectionId="trendingMovies" />
     </section>
   )
 }

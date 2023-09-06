@@ -4,6 +4,9 @@ import React from 'react'
 import Context from '../Context';
 import { useContext } from 'react';
 
+//components
+import ScrollGallery from './ScrollGallery';
+
 export default function upcumings() {
 
     const { upcomings, IMAGE_PATH } = useContext(Context);
@@ -11,14 +14,7 @@ export default function upcumings() {
   return (
     <section id="upcoming">
         <h2>Próximamente</h2>
-        <div className="scroll-gallery">
-            { upcomings.map((upcoming) => 
-            <div key={upcoming.id} className="wrap-gallery">
-                <img src={ IMAGE_PATH + upcoming.backdrop_path} alt={upcoming.original_title} />
-                <p>{upcoming.original_title}</p> 
-            </div> 
-            )}
-        </div>
+        <ScrollGallery props={upcomings} sectionId="upcoming" />
     </section>
   )
 }

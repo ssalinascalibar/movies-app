@@ -27,14 +27,19 @@ export default function ScrollGallery({props, sectionId}) {
           className="left carousel-control-prev-icon wrap-arrow-gallery"
           onClick={() => leftScroll(sectionId)}
         ></div>
-        {props.map((prop) => (
-          <div key={prop.id} className="wrap-gallery">
-            <img
-              src={IMAGE_PATH + prop.poster_path}
-              alt={prop.original_title}
-            />
-          </div>
-        ))}
+        {props.map((prop) => {
+            if (sectionId != "upcoming") {
+              return <div key={prop.id} className="wrap-gallery">
+               <img src={IMAGE_PATH + prop.poster_path} alt={prop.original_title}/>
+              </div>
+            } else {
+              return <div key={prop.id} className="wrap-gallery">
+                <img src={ IMAGE_PATH + prop.backdrop_path} alt={prop.original_title} />
+                <p>{prop.original_title}</p>
+              </div>
+            }
+            
+        })}
         <div
           className="right carousel-control-next-icon wrap-arrow-gallery"
           onClick={() => rightScroll(sectionId)}

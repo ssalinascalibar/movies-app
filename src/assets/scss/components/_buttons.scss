@@ -1,0 +1,19 @@
+// ver trailer button
+.trailerBtn {
+  background-color: $font-color;
+  font-size: $small;
+  font-weight: $bold;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 3px;
+    & i {
+      padding-right: 0.2rem;
+    }
+}
+
+// react player button Salir
+.player-wrapper .trailerBtn{
+  @include btn-positon-absolute
+}
+
+

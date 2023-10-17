@@ -14,3 +14,10 @@
     -webkit-mask-image: linear-gradient(#0c0a0f 40%, transparent 90%);
     mask-image: linear-gradient(#0c0a0f 40%, transparent 90%);
 }
+
+//Button position absolute (inside react player)
+@mixin btn-positon-absolute {
+  position: absolute;
+  top: 85%;
+  left: 7%;
+}

@@ -2,6 +2,9 @@
 
 //header carousel
  header .carousel{
+     .carousel-control-prev, .carousel-control-next{
+         width: 5%;
+     }
      .carousel-item{
          & img{
              @include transparent-mask;
@@ -9,7 +12,7 @@
             }
             & .carousel-caption{
                 margin: 0 0 0 1rem;
-                padding: 0 0 0.5rem 0;
+                padding: 0 0 0.5rem 1rem;
                 inset: 0;
                 display: flex;
                 flex-direction: column;
@@ -17,9 +20,7 @@
                 align-items: flex-start;
                 text-align: left;
                 width: 70%;
-                height: 100%;
-                
-                
+                height: 100%;   
             }
             & h3{
                 font-size: $large;
@@ -40,18 +41,20 @@
             .carousel-item{
                 
                    & .carousel-caption{
-                       margin: 0;
-                       padding: 0 0 1rem 0;
-                       align-items: center;
-                       text-align: center;
-                       width: 100%;
-                       height: 100%;
-                       
+                    margin: 0 0 0 3rem;
+                    // padding: 0 0 0.5rem 4rem;
+                    text-align: left;
                        
                    }
+
+                   & p{
+                    font-size: $large;
+                    -webkit-line-clamp: 3;
+                    }
+
                    & h3{
                        font-size: $x-large;
-                       width: 50%;
+                       
                    }
                }
         }

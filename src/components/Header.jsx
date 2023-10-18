@@ -56,7 +56,7 @@ export default function Header() {
               <div className="carousel-content">
                 <h3>{top.title}</h3>
                 <p>{top.overview}</p>
-                <button className="trailerBtn" onClick={() => {getVideos(top.id) ; setPlaying(true)}}>
+                <button className="trailerBtn" onClick={() => { getVideos(top.id) ; setPlaying(true) }}>
                   <i className="fa-solid fa-play"></i> Ver Trailer
                 </button>
                 {/* <button onClick={() => setPlaying(false)}>Cerrar</button> */}
@@ -69,7 +69,6 @@ export default function Header() {
         { playing ? (
                 <div className="player-wrapper">
                   <ReactPlayer
-                  
                     playing
                     className="react-player"
                     url={`https://www.youtube.com/watch?v=${trailer?.key}`}

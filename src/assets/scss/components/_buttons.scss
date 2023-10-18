@@ -16,4 +16,16 @@
   @include btn-positon-absolute
 }
 
+@media screen and (min-width:992px){
+  .trailerBtn {
+    font-size: $large;
+    padding: 0.2rem 1.5rem;
+      
+  }
+
+  .trailerBtn:hover{
+    background-color: #ffffff;
+  }
+}
+
 

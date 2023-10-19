@@ -42,9 +42,11 @@
                 
                    & .carousel-caption{
                     margin: 0 0 0 3rem;
-                    // padding: 0 0 0.5rem 4rem;
+                    padding: 0 0 9rem 1rem;
                     text-align: left;
-                       
+                    & .carousel-content p{
+                        width: 60%;
+                    }   
                    }
 
                    & p{

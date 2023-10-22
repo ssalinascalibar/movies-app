@@ -3,6 +3,8 @@
 //header carousel
  header .carousel{
      .carousel-control-prev, .carousel-control-next{
+         position: absolute;
+         z-index: 1;
          width: 5%;
      }
      .carousel-item{

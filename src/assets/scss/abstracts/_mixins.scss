@@ -18,6 +18,7 @@
 //Button position absolute (inside react player)
 @mixin btn-positon-absolute {
   position: absolute;
+  z-index: 2;
   top: 85%;
   left: 7%;
 }

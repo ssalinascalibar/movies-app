@@ -69,6 +69,7 @@ export default function Header() {
         { playing ? (
                 <div className="player-wrapper">
                   <ReactPlayer
+                  controls
                     playing
                     className="react-player"
                     url={`https://www.youtube.com/watch?v=${trailer?.key}`}
@@ -80,7 +81,7 @@ export default function Header() {
                   </button>
                 </div>
                 ) : (
-                  <p> "Lo sentimos, el Trailer no está disponible de momento" </p>
+                  <p> "Lo sentimos, no hay contenido disponible de momento" </p>
                 )}
       </Carousel>
     </header>

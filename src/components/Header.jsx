@@ -77,7 +77,7 @@ export default function Header() {
                     height="100%"
                   />
                   <button className="trailerBtn" onClick={() => setPlaying(false)}>
-                    <i className="fa-solid fa-circle-xmark"></i> Salir
+                  <i className="fa-solid fa-xmark"></i> Salir
                   </button>
                 </div>
                 ) : (

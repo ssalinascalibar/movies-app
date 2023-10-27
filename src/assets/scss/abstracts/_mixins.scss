@@ -11,7 +11,7 @@
 
 //máscara para imagen
 @mixin transparent-mask {
-    -webkit-mask-image: linear-gradient(#0c0a0f 30%, transparent 90%);
+    -webkit-mask-image: linear-gradient(#0c0a0f 30%, transparent 80%);
     mask-image: linear-gradient(#0c0a0f 30%, transparent 90%);
 }
 

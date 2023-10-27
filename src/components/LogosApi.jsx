@@ -31,7 +31,7 @@ export default function LogosApi({ id }) {
       }, []);
 
   return (
-    <div>
+    <div className="logo-trailer">
         <Image src={IMAGE_PATH + logo.file_path} /> 
     </div>
   )

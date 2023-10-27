@@ -8,7 +8,7 @@
          width: 5%;
      }
      .carousel-item{
-         & img{
+         & #header-bkg{
              @include transparent-mask;
              width: 100%;
             }
@@ -19,7 +19,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                align-items: flex-start;
                 text-align: left;
                 width: 70%;
                 height: 100%;   
@@ -31,11 +30,7 @@
             }
             & p{
                 font-size: $small;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                display: none;
             }
         }
 
@@ -53,7 +48,11 @@
 
                    & p{
                     font-size: $large;
+                    display: -webkit-box;
                     -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     }
 
                    & h3{

@@ -64,14 +64,16 @@ export default function Header() {
       <Carousel indicators={false}>
         {topRated.map((top) => (
           <Carousel.Item key={top.id}>
-            <Image src={IMAGE_PATH + top.backdrop_path} text="First slide" />
+            <Image src={IMAGE_PATH + top.backdrop_path} text="First slide" id="header-bkg"/>
             <Carousel.Caption>
               <div className="carousel-content">
                 <LogosApi id={top.id}/>
-                {/* <h3>{top.title}</h3> */}
                 <p>{top.overview}</p>
                 <button className="trailerBtn" onClick={() => { getVideos(top.id) ; setPlaying(true) }}>
                   <i className="fa-solid fa-play"></i> Ver Trailer
+                </button>
+                <button className="trailerBtn" onClick={() => { getVideos(top.id) ; setPlaying(true) }}>
+                  <i className="fa-solid fa-circle-info"></i> Más información
                 </button>
                 {/* <button onClick={() => setPlaying(false)}>Cerrar</button> */}
                 {/* <button onClick={() => setPlaying(true)}>ver trailer</button> */}

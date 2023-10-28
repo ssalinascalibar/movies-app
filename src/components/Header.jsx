@@ -82,7 +82,7 @@ export default function Header() {
             </Carousel.Caption>
           </Carousel.Item>
         ))}
-        { playing ? (
+        { playing && 
                 <div className="player-wrapper">
                   <ReactPlayer
                   controls
@@ -92,14 +92,11 @@ export default function Header() {
                     width="100%"
                     height="100%"
                   />
-                  {/* <img src={logo} alt="" /> */}
                   <button className="trailerBtn" onClick={() => setPlaying(false)}>
                   <i className="fa-solid fa-xmark"></i> Salir
                   </button>
                 </div>
-                ) : (
-                  <p> "Lo sentimos, no hay contenido disponible de momento" </p>
-                )}
+                }
       </Carousel>
     </header>
   );

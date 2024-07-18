@@ -18,17 +18,13 @@ export default function Header() {
   const [trailer, setTrailer] = useState({});
   const [playing, setPlaying] = useState(false);
   
-  console.log(playing);
-  console.log(trailer)
-  
-
   // Se coloca ? para poder renderizar y tambien ver el console log, ya que trailer solo existe cuando se ejecuta el onclick, es decir en el primer render no existe esta variable
-  console.log(trailer?.key);
+  // console.log(trailer?.key);
   
   const { topRated, IMAGE_PATH, API_URL, API_KEY } = useContext(Context);
   
   const getVideos = async (id) => {
-    console.log(id);
+    // console.log(id);
     if (id) {
       const videos = await axios
       .get(`${API_URL}/movie/${id}/videos?api_key=${API_KEY}`)

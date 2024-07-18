@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createContext, useState, useEffect } from "react";
 
 import axios from "axios";
@@ -40,10 +41,10 @@ const ContextProvider = ({ children }) => {
         { data: upcomings },
         { data: topRated },
       ]) => (
-        setMovies(movies.results),
-        setPopular(popular.results),
-        setUpcomings(upcomings.results),
-        setTopRated(topRated.results) 
+        setMovies(movies?.results),
+        setPopular(popular?.results),
+        setUpcomings(upcomings?.results),
+        setTopRated(topRated?.results) 
       )
     );
 
@@ -57,11 +58,6 @@ const ContextProvider = ({ children }) => {
     //   setPopular(response.data);
     // });
   }, []);
-
-  console.log(movies);
-  console.log(popular);
-  console.log(upcomings);
-  console.log(topRated);
 
   return (
     <Context.Provider
